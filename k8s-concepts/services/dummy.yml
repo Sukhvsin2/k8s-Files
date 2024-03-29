@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dummycluster
+  labels:
+    app: dummy
+spec:
+  containers:
+    - name: dummypod
+      image: sukhvsin2/simple-application
