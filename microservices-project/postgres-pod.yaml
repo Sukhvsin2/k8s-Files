@@ -4,13 +4,13 @@ metadata:
   name: postgres-pod
   labels:
     name: postgres-pod
-    app: demo-result-app
+    app: demo-voting-app
 spec:
   containers:
     - name: postgres-pod
       image: postgres
       ports:
-        containers: 5432
+        - containerPort: 5432
       env:
         - name: POSTGRES_USER
           value: "postgres"

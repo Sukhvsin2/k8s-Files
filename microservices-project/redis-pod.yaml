@@ -10,4 +10,4 @@ spec:
     - name: redis-pod
       image: redis
       ports:
-        containers: 6379
+        - containerPort: 6379
